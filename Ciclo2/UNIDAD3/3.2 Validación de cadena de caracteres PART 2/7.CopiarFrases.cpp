@@ -4,16 +4,19 @@
 #include "iostream"
 using namespace std;
 
-int main()
-{
-    char a[10];
+int main(){
+	
+    char frase[100],frase2[100];
    	cout<<"Ingrese un texto "<<endl;
    	//Para capturar datos en una cadena de caracteres se usa gets(char);
-   	gets(a);
-   	getch();
-   	printf("%s",a);
-    getch();
+   	gets(frase);
+   	printf("%s",frase);
     //Para contar se usa strlen en una cadena de caracteres
-    cout<<strlen(a);
+    cout<<strlen(frase);
+    //strcpy nos permite copiar frases
+    strcpy(frase2,frase);
+    //imprimir frase 2 
+    printf("%s",frase2);
     return 0;
+    
 }
